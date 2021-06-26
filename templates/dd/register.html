@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#000066
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h2{
+background-color:gray;
+}
+body{background:#0099FF}
+table {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 45%;
+}td, th {
+    border: 1px solid #0099FF;
+    text-align: left;
+    padding: 8px;
+}tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<title>highway roads</title>
+</head>
+
+<body align="center">
+{% if result %}
+   <p>{{result}}</p>
+{%endif%}
+ 
+<h1 align="center"> NEW USER REGISTER </h1>
+<form  name="form1" method="post" action="/user">
+<p><ul><li><a href="/">HOME</a></li>
+   <li><a href="/register">NEW USER REGISTER</a></li>
+   <li><a href="/login">YOUR LOGIN</a></li></ul>
+      </p>
+  <table width="441" height="405" border="0" align="center" bordercolor="blue">
+    <tr>
+      <td width="97">BANK HOLDER NAME </td>
+      <td width="239"><div align="center">
+        <input type="text" name="name" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>MOBILE NO </td>
+      <td><div align="center">
+        <input type="text" name="mobile" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>EMAIL ID </td>
+      <td><div align="center">
+        <input type="text" name="email" required/>
+      </div></td>
+    </tr>
+   <tr>
+      <td>ADDRESS</td>
+      <td><div align="center"><textarea name="address"></textarea>
+	  </div></td>
+    </tr>
+    <tr>
+      <td>BANK NAME </td>
+      <td><div align="center"><select name="bank">
+	  <option value="">-BANK-</option>
+	  <option value="SBI">-SBI-</option>
+	  <option value="IOB">-IOB-</option>
+	  <option value="CANARA">-CANARA-</option>
+	  <option value="INDIAN BANK">-INDIAN BANK-</option>
+	  <option value="ICICI">-ICICI-</option>
+	  <option value="HDFCI">-HDFCI-</option>
+	  <option value="LVB">-LVB-</option>
+	  <option value="BOI">-BOI-</option>
+      </select>
+      </div></td>
+    </tr>
+	<tr>
+      <td>ACCOUNT NO</td>
+      <td><div align="center">
+        <input type="text" name="accno" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>BRANCH</td>
+      <td><div align="center">
+        <input type="text" name="branch" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>USERNAME</td>
+      <td><div align="center">
+        <input type="text" name="username" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>PASSWORD</td>
+      <td><div align="center">
+        <input type="password" name="password"  maxlength="4" required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td><div align="center">
+        <input type="date" name="rdate"   required/>
+      </div></td>
+    </tr>
+    <tr>
+      <td> <div align="center">
+        <input type="reset" name="btn1" value="RESET" />
+      </div></td>
+      <td><div align="center">
+        <input type="submit" name="btn" value="SUBMIT" />
+      </div></td>
+    </tr>
+  </table>
+ 
+</form>
+</body>
+</html>

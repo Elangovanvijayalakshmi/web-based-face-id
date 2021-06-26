@@ -1,0 +1,72 @@
+<html>
+<title>illusion pin</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color:#33CCFF;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  
+}
+
+</style>
+<body>
+<h1 align="center">SECURITY ILLUSION PIN</h1>
+
+WELCOME:{%for x in myresult %}
+{{ x[8] }}
+{%endfor%}
+
+
+<form name="form" method="post" action="/view">
+
+    <table width="457" height="344" border="0" align="center">
+      <tr>
+        <td width="200"><ul><li><a href="/deposit">DEPOSIT</a></li></ul></td>
+        <td width="6"></td>
+        <td width="540"><ul>
+          <li><a href="/userhome">HOME</a></li>
+        </ul></td>
+      </tr>
+      
+     
+      <tr>
+        <td><ul>
+          <li><a href="/withdraw">CASE WIDTHDRAW </a></li>
+        </ul></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+       
+      </tr>
+      <tr>
+        <td><ul>
+          <li><a href="/balance">BALAENCE CHECK </a></li>
+        </ul></td>
+        <td></td>
+        <td><ul>
+          <li><a href="/">EXIT</a></li>
+        </ul></td>
+      </tr>
+  </table>
+ 
+
+</form>
+</body>
+</html>

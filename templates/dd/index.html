@@ -1,0 +1,63 @@
+
+<html>
+<title>Illusion Pin</title>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#9999CC;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h2{
+background-color:gray;
+}
+body{background:#00FFCC}
+</style>
+  
+    <link href="../static/min.css"  type= "text/css">
+</head>
+
+<body>
+<h1 align="center">SECURITY ILLUSION PIN</h1>
+{% if result %}
+   <p>{{result}}</p>
+   <p>{%endif%}</p>
+   <p><ul>
+     <li><a href="/">HOME</a></li>
+     <li><a href="/register">NEW REGISTER</a></li>
+     <li><a href="/login">USER LOGIN</a></li>
+	 <li><a href="/admin_login">ADMIN LOGIN</a></li>
+   </ul>
+      </p>
+
+
+      <div align="center">
+        <table width="818" border="0">
+          <tr>
+            <td width="416"><img src="../static/ip3.jpg" width="405" height="267"></td>
+            <td width="392"><p><a href="https://en.wikipedia.org/wiki/Charging_station#cite_note-49"></a> <img src="../static/ip2.jpg" width="388" height="257"></p>            </td>
+          </tr>
+        </table>
+</div>
+<!--   <a href="/view">User View</a> | <a href="/view1">station view</a>
+--></body>
+</html>

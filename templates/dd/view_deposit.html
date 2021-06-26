@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>illusion pin</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#00CCFF;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+table {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 45%;
+}td, th {
+    border: 1px solid #0099FF;
+    text-align: left;
+    padding: 8px;
+}tr:nth-child(even) {
+    background-color: #dddddd;
+}
+h1{background:#99FF99;}
+</style>
+</head>
+<body>
+<h1 align="center">View Deposit</h1>
+<p align="center">&nbsp;</p>
+<ul><li><a href="/deposit_view">HOME</a></li>
+<li><a href="/user_view">BANK HOLDER DETAILS</a></li>
+<li><a href="/deposit_view">LOGOUT</a></li></ul>
+<form id="form1" name="form1" method="post" action="">
+  <p>&nbsp;</p>
+  <table width="322" height="98" border="0" align="center">
+    <tr>
+	 <td>Sno</td>
+      <td>Name</td>
+      <td>Account No </td>
+      <td>Amount</td>
+	   <td>Date</td>
+    </tr>
+	{% for x in result %}
+    <tr>
+	<td>{{ x[0] }}</td>
+      <td>{{ x[1] }}</td>
+      <td>{{ x[2] }}</td>
+      <td>{{ x[3] }}</td>
+	  <td>{{ x[4] }}</td>
+    </tr>
+	{%endfor%}
+  </table>
+</form>
+</body>
+</html>

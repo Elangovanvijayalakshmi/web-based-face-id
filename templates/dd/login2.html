@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#9999CC;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+table {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 45%;
+}td, th {
+    border: 1px solid #0099FF;
+    text-align: left;
+    padding: 8px;
+}tr:nth-child(even) {
+    background-color: #dddddd;
+}</style>
+</head>
+<title>Illusion Pin</title>
+<body>
+{% if result %}
+   <p>{{result}}</p>
+{%endif%}
+<h1 align="center">USER LOGIN</h1>
+<form name="form1" method="post" action="/admin_login">
+ <p><ul>
+   <li><a href="/">HOME</a></li>
+   <li><a href="/register">NEW USER REGISTER</a></li>
+   <li><a href="/login">YOUR LOGIN </a></li>
+ </ul>
+  </p>
+  <table width="334" border="0" align="center">
+    <tr>
+      <td height="57">Username</td>
+      <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+      <td width="144" height="57">Password</td>
+      <td width="180"><input name="password" type="password"></td>
+    </tr>
+  </table>
+  <p align="center">
+    <input type="submit" name="Submit" value="Login">
+  </p>
+</form>
+
+</body>
+</html>
